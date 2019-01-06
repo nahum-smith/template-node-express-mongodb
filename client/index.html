@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JSON Mongo Table</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container">
+    <h1 class="title">HTML Table and MongoDB Data Praxis</h1>
+
+    <div class="col-sm-5 my-3">
+      <button type="button" class="btn btn-primary" onclick="fetchData('http://localhost:3000/test1')">Fetch All Table
+        Data</button>
+    </div>
+
+    <div class="col-sm-5 my-3">
+      <button type="button" class="btn btn-primary" onclick="fetchByBirthday()">Fetch
+        Data
+        By Birthday</button>
+    </div>
+
+    <div class="form-group my-3">
+      <div class="col-sm-5">
+        <label for="emailSearch">Fetch By Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+        <button type="button" class="btn btn-primary" onclick="fetchByEmail()">Fetch By Email</button>
+      </div>
+    </div>
+
+    <div id="person-card" class="card" style="width: 25rem; display: none">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <div id="card-text" class="card-text">
+          <p>First Name: <span id="card-firstname"></span></p>
+          <p>Last Name: <span id="card-lastname"></span></p>
+          <p>Email: <span id="card-email"></span></p>
+          <p>Quote: <span id="card-quote"></span></p>
+        </div>
+        <a class="btn btn-primary" onclick="closePerson()">Close</a>
+      </div>
+    </div>
+    <div id="table-container">
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
+  <script>
+  </script>
+</body>
+
+</html>

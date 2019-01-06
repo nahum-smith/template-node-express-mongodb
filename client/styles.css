@@ -1,0 +1,33 @@
+body {
+  background-color: grey
+}
+
+.title {
+  text-align: center;
+}
+
+#table-container {
+  margin: 20px auto 20px auto;
+}
+
+.table-container-item {
+  margin: 0px auto 20px auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.table-header {
+  font-weight: bold;
+  text-align: left;
+}
+
+.table-header-cell {}
+
+.table-header-row {}
